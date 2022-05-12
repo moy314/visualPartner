@@ -1,4 +1,4 @@
-const visualPartnerService = require ("../lib/services/visualPartnerService");
+const visualPartnerService = require ("../../lib/services/visualPartnerService");
 
 describe("test for visualPartnerService",()=>{
 
