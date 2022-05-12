@@ -2,7 +2,7 @@ const visualPartnerService = require ("../lib/services/visualPartnerService");
 
 describe("test for visualPartnerService",()=>{
 
-    test(" test for getStudents()",()=>{
+    test("test for getStudents()",()=>{
 
         expect(visualPartnerService.getStudents()).toEqual([
             {
@@ -602,6 +602,274 @@ describe("test for visualPartnerService",()=>{
               "haveCertification": true
             }
           ])
+
+    })
+
+    test("test for certificatedExplorers",()=>{
+
+      expect(visualPartnerService.haveCertification()).toEqual([
+        {
+          id: '6264d5d89f1df827eb84bb23',
+          name: 'Warren',
+          email: 'Todd@visualpartnership.xyz',
+          credits: 508,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Avanzado' ],
+          previousCourses: 1,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d85cf81c496446b67f',
+          name: 'Lucinda',
+          email: 'Sexton@visualpartnership.xyz',
+          credits: 677,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 6,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8cda17de0d2e9f236',
+          name: 'Fuentes',
+          email: 'Sharlene@visualpartnership.xyz',
+          credits: 210,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 10,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8878a117a9c57c5c4',
+          name: 'Claudia',
+          email: 'Howell@visualpartnership.xyz',
+          credits: 227,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 5,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8dd01ab97ddedbba5',
+          name: 'Taylor',
+          email: 'Haynes@visualpartnership.xyz',
+          credits: 652,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 5,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d88214a862261ab1a3',
+          name: 'Young',
+          email: 'Montoya@visualpartnership.xyz',
+          credits: 447,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Básico' ],
+          previousCourses: 9,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d876e13bc0a8ee0bff',
+          name: 'Constance',
+          email: 'Benton@visualpartnership.xyz',
+          credits: 311,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Básico' ],
+          previousCourses: 7,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d87e5aaed2d52b7bf6',
+          name: 'Roxanne',
+          email: 'Dionne@visualpartnership.xyz',
+          credits: 964,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Avanzado' ],
+          previousCourses: 10,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8b7b5eaccfc8f51f1',
+          name: 'Bessie',
+          email: 'Mcpherson@visualpartnership.xyz',
+          credits: 558,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Básico' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8b4b46a11ea710c21',
+          name: 'Obrien',
+          email: 'Gracie@visualpartnership.xyz',
+          credits: 876,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 3,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d80a5f5cdd35f740f5',
+          name: 'Lourdes',
+          email: 'Ila@visualpartnership.xyz',
+          credits: 371,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Intermedio' ],
+          previousCourses: 5,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d87a139ff2d683548c',
+          name: 'Wall',
+          email: 'Dorthy@visualpartnership.xyz',
+          credits: 919,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 6,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8e494a32f84946435',
+          name: 'Leona',
+          email: 'Mcfarland@visualpartnership.xyz',
+          credits: 465,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Básico' ],
+          previousCourses: 6,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8f99e1eae7392b146',
+          name: 'Alvarado',
+          email: 'Maryann@visualpartnership.xyz',
+          credits: 450,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 10,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d85d181c123117e4f7',
+          name: 'Reyna',
+          email: 'Alana@visualpartnership.xyz',
+          credits: 777,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Intermedio' ],
+          previousCourses: 2,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d88775eed976fa79db',
+          name: 'Lowery',
+          email: 'Rosemary@visualpartnership.xyz',
+          credits: 436,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Avanzado' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8e24ab574c5088fb5',
+          name: 'Jenny',
+          email: 'Keith@visualpartnership.xyz',
+          credits: 156,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 3,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8ad01712a767dcf93',
+          name: 'Margret',
+          email: 'Delaney@visualpartnership.xyz',
+          credits: 578,
+          enrollments: [ 'Visual Thinking Intermedio' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8b3f41b0cb2df21f1',
+          name: 'Kay',
+          email: 'Ball@visualpartnership.xyz',
+          credits: 281,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Avanzado' ],
+          previousCourses: 10,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d81bf954ddff848dfc',
+          name: 'Perry',
+          email: 'Sally@visualpartnership.xyz',
+          credits: 444,
+          enrollments: [ 'Visual Thinking Básico', 'Visual Thinking Intermedio' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d887b0ee0adfdf9442',
+          name: 'Franco',
+          email: 'Antoinette@visualpartnership.xyz',
+          credits: 335,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Básico' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d864550a6a867d8e22',
+          name: 'Rosanne',
+          email: 'Juliette@visualpartnership.xyz',
+          credits: 469,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 3,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d82701c8ec81325351',
+          name: 'Mann',
+          email: 'Harding@visualpartnership.xyz',
+          credits: 335,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 5,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8197a2877933df120',
+          name: 'Mosley',
+          email: 'Dixon@visualpartnership.xyz',
+          credits: 529,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 6,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d81872b70bb0c171a6',
+          name: 'Monroe',
+          email: 'Beulah@visualpartnership.xyz',
+          credits: 329,
+          enrollments: [ 'Visual Thinking Avanzado' ],
+          previousCourses: 8,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d85659057b4331973b',
+          name: 'Chase',
+          email: 'Moses@visualpartnership.xyz',
+          credits: 769,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 3,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8e384c8da8ea5c16b',
+          name: 'Ware',
+          email: 'Shields@visualpartnership.xyz',
+          credits: 552,
+          enrollments: [ 'Visual Thinking Avanzado', 'Visual Thinking Intermedio' ],
+          previousCourses: 4,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d8aa87c9330234cbc2',
+          name: 'Hollie',
+          email: 'Jewell@visualpartnership.xyz',
+          credits: 376,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Básico' ],
+          previousCourses: 5,
+          haveCertification: true
+        },
+        {
+          id: '6264d5d82eb0f4917bd0d332',
+          name: 'Clare',
+          email: 'Hays@visualpartnership.xyz',
+          credits: 227,
+          enrollments: [ 'Visual Thinking Intermedio', 'Visual Thinking Básico' ],
+          previousCourses: 2,
+          haveCertification: true
+        }
+      ])
 
     })
 })
